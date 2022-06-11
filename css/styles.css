@@ -299,8 +299,7 @@ padding-bottom: 30px;}
 .social-list {display: flex;
 justify-content: center;
 list-style: none;
-padding-left: 32px;
-padding-right: 32px;
+padding: 0;
 }
 
 .social-list .link + .link {margin-left: 10px;}
@@ -325,28 +324,39 @@ color: var(--button-accent-color);}
 
 .company {display: flex;}
 
+.company .item {width: calc((100%-150px)/6);
+}
+
+.company .item + .item {
+        margin-left: 30px;
+    }
+.clients {
+    padding: 94px 215px;
+}
 
 .client-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
 }
+/* 
+        padding-left: 32px;
+        padding-right: 16px; */
+
+
 
 .client-box:hover,
 .client-box:focus {color: var(--accent-color);
 border-color: var(--accent-color);}
 
-.clients {
-    padding: 94px 215px;
-}
-.clients .item + .item {margin-left: 30px;}
 
-.client-logo {fill: currentColor;}
+
+.client-logo {fill: currentColor;
+}
 
 
 
